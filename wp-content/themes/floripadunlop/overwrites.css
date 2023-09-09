@@ -1,0 +1,330 @@
+:root {
+    --red: #FF1D00;
+    --blue: #101223;
+    --gray: #B3B5BD;
+    --yellow: #FFE100;
+}
+
+.brand {
+	width: 185px;
+}
+
+header {
+    position: relative;
+    z-index: 99;
+}
+
+html, body {
+    font-family: Oxanium, Arial, Helvetica !important;
+}
+
+.module-whatsapp .wpcf7-select,
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+    padding: 0;
+    border: 0;
+    text-align: right;
+}
+.module-whatsapp .wpcf7-select,
+.module-whatsapp .module-whatsapp-container .module-whatsapp-content .module-whatsapp-content-form form input.module-whatsapp-content-form-input:hover {
+    border-left: 2px solid #43474e !important;
+}
+.module-whatsapp .wpcf7-select,
+.module-whatsapp .module-whatsapp-container .module-whatsapp-content .module-whatsapp-content-form form input.module-whatsapp-content-form-input:hover {
+    border-left: 2px solid #43474e !important;
+}
+.module-whatsapp .wpcf7-select,
+.wpcf7-select, .module-whatsapp .module-whatsapp-container .module-whatsapp-content .module-whatsapp-content-form form input.module-whatsapp-content-form-input {
+    width: 100%;
+    height: 40px !important;
+    line-height: 40px !important;
+    display: block;
+    position: relative;
+    padding: 0 15px !important;
+    font-family: "OpenSans-Regular", sans-serif !important;
+    font-size: 11.998px !important;
+    background-color: #f5f7f9 !important;
+    border: 0 !important;
+    border-left: 2px solid #25d366 !important;
+    border-radius: 3px !important;
+    margin-bottom: 5px !important;
+    transition: all 100ms ease-in-out !important;
+    color: #43474e !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+.module-whatsapp .wpcf7-select,
+.module-whatsapp .module-whatsapp-container .module-whatsapp-content .module-whatsapp-content-form form input.module-whatsapp-content-form-input {
+    width: 100%;
+    height: 40px !important;
+    line-height: 40px !important;
+    display: block;
+    position: relative;
+    padding: 0 15px !important;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 11.998px !important;
+    background-color: #f5f7f9 !important;
+    border-left: 2px solid #25d366 !important;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    transition: all 100ms ease-in-out;
+    color: #43474e !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+.module-whatsapp .wpcf7-select {
+	text-align: initial
+}
+.wpcf7-spinner {
+    display: none;
+}
+
+.wpcf7-not-valid-tip {
+    margin-top: 1rem;
+}
+
+.section[data-section=contatos] .container .btn {
+    font-size: 1rem;
+    min-width: 330px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.copyright a {
+	color: black
+}
+.copyright a:hover {
+	text-decoration: underline
+}
+
+.gallery-img {
+	height: 152px;
+    width: 100%;
+	object-fit: cover;
+}
+
+.btn.phone .addresses-dropdown {
+    position: absolute;
+    display: none;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    background: black;
+    z-index: 10;
+    text-align: left;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    border: 1px var(--yellow) solid;   
+    color: white; 
+    transition: initial;
+}
+
+.btn.phone:hover .addresses-dropdown {
+    display: block;
+}
+
+.btn.phone .addresses-dropdown * {
+    color: white;
+    line-height: 1.2;
+    font-size: .65rem;
+}
+
+.btn.phone .addresses-dropdown > li:not(:last-child) {
+    padding-bottom: .5rem;
+}
+
+.footer .container .addresses p, .footer .container .addresses p * {
+    font-size: 1.1rem;
+    color: inherit;
+}
+
+.footer .container .nav-item {
+    margin-bottom: .5rem;
+}
+
+.sidebar .addresses a {
+    color: inherit;
+}
+
+.footer .container .addresses p, 
+.footer .container .addresses p * {
+    color: white;
+}
+
+.card-inner .text * {
+    color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-img {
+        height: 252px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .model-wrapper {
+        max-height: 225px;
+    }
+    .brand {
+        width: 150px;
+    }
+
+    .header .container > * > img {
+        filter: invert(1);
+    }    
+    .gallery-img {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .brand {
+        width: 250px;
+    }
+}
+
+.pagination > * > * {
+    border-radius: 10px;
+    margin: 0 .5rem;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.pagination > * > *.next,
+.pagination > * > *.prev {
+    color: var(--red);
+}
+
+.pagination > * > *.current {
+    color: white;
+    background-color: var(--red);
+}
+
+.hash-nav .owl-stage img,
+.galeria .item img {
+    object-fit: cover;
+    height: 100%;
+}
+.hash-nav .owl-stage .nav-item,
+.galeria .item {
+    height: 100%;
+}
+.hash-nav .owl-stage {
+    display: flex;
+    align-items: stretch;
+}
+.section[data-section=unidades-interna] .single-carousel .card.--thumbnail .card-inner {
+    background-color: transparent;
+    padding: 0;
+    box-shadow: initial;
+}
+.section[data-section=unidades-interna] .single-carousel .owl-nav {
+    left: -1.6rem;
+}
+
+.nav.--mobile {
+    background-color: black;
+    overflow: hidden;
+    max-height: 0;
+    transition: 500ms ease max-height;
+}
+
+.nav.--mobile.is-active {
+    max-height: 500px;
+}
+
+.nav.--mobile ul a {
+    padding: 1.5rem;
+    display: block;
+}
+
+.nav.--mobile ul > *:not(:last-child) {
+    border-bottom: 1px rgba(255, 255, 255, .1) solid;
+}
+
+.nav.--mobile ul > * a {
+    color: white;
+}
+
+a:not(.btn):hover {
+	text-decoration: underline
+}
+
+p.privacidade a:hover {
+	text-decoration: underline;
+}
+
+p.privacidade, p.privacidade * {
+    line-height: 1.2;
+    color: inherit;
+}
+
+p.privacidade * {
+    font-weight: bold;
+}
+
+footer .addresses a:hover *,
+footer .addresses a:hover {
+	color: var(--yellow) !important;
+	text-decoration: none !important;
+}
+
+.btn.phone:hover {
+    opacity: 1 !important;
+}
+
+.nav a:hover {
+	text-decoration: none !important
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #46b450;
+    border: 0;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.header .container .nav.shortcuts .nav-item:not(:last-of-type),
+.header .container .nav-item:not(:last-of-type) {
+    padding-right: 10px;
+}
+
+.header .container #menu-main .nav-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.header .container > * > img {
+    max-width: 150px;
+}
+
+@media screen and (max-width: 568px) {
+    .header .container .logo {
+        max-width: 150px;
+    }
+}
+
+.nav-footer {
+	border-top: 1px rgba(255, 255, 255, .1) solid
+}
+
+.nav.--mobile .social-networks ul > * a {
+    padding: 0 0.53rem;
+}
+
+.nav.--mobile .social-networks ul > *:not(:last-child) {
+	border-bottom: 0
+}

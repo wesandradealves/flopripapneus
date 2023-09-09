@@ -1,0 +1,550 @@
+/*! 
+    Theme Name: Floripa Pneus Continental
+    Theme URI: 
+    Author: Agência 904
+    Author URI: https://www.904.ag
+    Description: Criada em 1995, a Floripa Pneus sempre se destacou por trazer aos seus clientes o que há de mais inovador no mercado nacional e importados. Especializada em pneus e rodas, oferecemos a maior variedade do estado com atendimento qualificado.
+    Version: 1.0
+    License: Agência 904
+    License URI: https://www.904.ag
+    Template: floripadunlop
+    Text Domain: floripacontinental
+*/
+
+:root {
+    --yellow: #FFAD00;
+    --blue: #101223;
+    --red: #FF1D00;
+}
+
+body, html {
+	font-family: "Oxanium", sans-serif;
+}
+
+
+.header .logo + img {
+    max-height: 40px;
+}
+
+.header .btn.phone {
+    background-color: black;
+    color: white;
+}
+
+.header .btn.phone * {
+    color: inherit;
+}
+
+.scrolldown {
+    border: 2px white solid;
+    color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 15px);
+    bottom: 40px;
+    font-size: 30px;
+    border-radius: 999px;    
+}
+
+.scrolldown [class*="fa"] {
+    font-size: 20px;
+    position: relative;
+    top: 2px;    
+}
+
+.section[data-section="home-produtos"] {
+    background-color: var(--yellow);
+}
+
+.section[data-section=home-produtos] .container {
+    padding-bottom: 50px;
+}
+
+.section[data-section=home-produtos] .default-carousel .owl-stage .owl-item:nth-of-type(2) {
+    top: 0;
+}
+
+.section[data-section=home-produtos]  .card:not(.--thumbnail) .card-inner .img-fluid {
+    height: 130px;
+}
+
+.section[data-section=unidades] .card-inner,
+.section[data-section=home-produtos]  .card:not(.--thumbnail) .card-inner {
+    background-color: initial;
+    padding: 0;
+    box-shadow: initial;
+}
+
+.section[data-section=home-produtos]  .card:not(.--thumbnail) .card-inner .img-fluid {
+    margin-top: 0;
+}
+
+.section[data-section=home-produtos] .default-carousel .owl-stage .owl-item .card .card-inner .title {
+    border-top: 2px var(--red) solid;
+    padding-top: 17px;
+    background-color: var(--yellow);
+}
+
+.section[data-section=home-produtos] .section-header {
+    padding-bottom: 20px;
+}
+
+.section[data-section=unidades] {
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: var(--blue);
+}
+
+.section[data-section=unidades] .section-header {
+    padding-bottom: 30px;
+}
+
+.section[data-section=unidades] .card-inner .text {
+    text-align: center;
+}
+
+.section[data-section=unidades] .card-inner .text::after {
+    margin: 20px auto;
+}
+
+.section[data-section=unidades] .card-inner .text:first-of-type {
+    max-width: 260px;
+}
+
+.section[data-section=unidades] .card-inner .text:last-of-type::after {
+    display: none;
+}
+
+.section[data-section=unidades] .section-header:last-of-type h2, .section[data-section=unidades] .section-header:last-of-type .title {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.section[data-section=unidades] .section-header h2, .section[data-section=unidades] .section-header .title {
+    font-weight: 300;
+}
+
+.section[data-section=unidades] .section-header h2 strong, .section[data-section=unidades] .section-header .title strong {
+    font-weight: bold;
+}
+
+.section[data-section=unidades]::after {
+    display: none;
+}
+
+.section[data-section=unidades] .container {
+    padding-top: 0;
+}
+
+.section[data-section=unidades] .container * {
+    z-index: 2;
+}
+
+.section[data-section=unidades] .section-header:first-of-type ~ .section-header {
+    color: var(--yellow);
+}
+
+.section[data-section=unidades] .section-header:first-of-type ~ .section-header h2,
+.section[data-section=unidades] .section-header:first-of-type ~ .section-header .title {
+    font-weight: bold;
+}
+
+.section[data-section=contatos] .container .section-header .text,
+.section[data-section=unidades] .card-inner .text {
+    color: white;
+}
+
+.section[data-section=unidades] .produtos .item {
+    margin-bottom: 0;
+}
+
+.section[data-section=unidades] .produtos .item .card.--thumbnail .card-inner .thumbnail {
+    margin: 0;
+}
+
+.section[data-section=unidades] .produtos .item .card {
+    max-width: initial;
+    width: 100%;
+}
+
+.section[data-section=unidades] .produtos .item .card.--thumbnail .card-inner .text {
+    text-align: initial;
+}
+
+@media screen and (min-width: 992px) {
+    .section[data-section=unidades] .produtos .item:nth-child(2n+1) {
+        position: relative;
+        top: 0;
+    }
+}
+
+.section[data-section=contatos] .container .section-header .title::after {
+    background-color: black;
+}
+
+.produtos .item .card.--thumbnail .card-inner,
+.section[data-section=contatos] {
+    background-color: var(--yellow);
+}
+
+.section[data-section=unidades-interna] .card-inner .text::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 108px;
+    background-color: #FF1D00;
+    margin-top: 20px;
+}
+
+.section[data-section=unidades-interna] .owl-nav {
+    display: none !important;
+}
+
+.produtos .item {
+    margin-bottom: 80px;
+}
+
+.produtos .item .card.--thumbnail .card-inner .title::after {
+    display: none;
+}
+
+.produtos .item .card.--thumbnail .card-inner .text {
+    margin-top: 29px;
+}
+
+.footer {
+    background-color: white;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer a:hover {
+    color: var(--red) !important;
+}
+
+.footer-top {
+    order: 1 !important
+}
+
+.footer-bottom {
+    order: 2 !important
+}
+
+.footer-bottom + * {
+    order: 3 !important;
+}
+
+.footer .container .text.copyright {
+    text-align: center;
+}
+
+.footer .container > *.footer-bottom::before, 
+.footer .container > *.footer-bottom::after {
+    display: none;
+}
+
+.footer .container > *.footer-bottom {
+    background-color: initial;
+}
+
+.footer .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer .container > * {
+    padding: 0;
+}
+.footer .fa-phone + * *,
+.footer .fa-phone + * {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.footer [class*="fa-"] {
+    color: var(--red) !important;
+}
+
+.footer .addresses > li {
+    margin: 0 !important;
+}
+
+.produtos .item .card.--thumbnail .card-inner .title,
+.footer .addresses > li p {
+    color: black;
+}
+
+.footer .addresses > li > span > span {
+    display: none !important;
+}
+
+.produtos .item .card.--thumbnail .btn.default.--variation {
+    color: var(--yellow);
+    background-color: var(--blue);
+    border: 2px transparent solid;
+}
+
+.produtos .item .card.--thumbnail .btn.default.--variation:hover {
+    border: 2px var(--blue) solid;
+    background-color: transparent;
+    color:  var(--blue);
+}
+
+.produtos .item .card.--thumbnail {
+    cursor: pointer;
+}
+
+.produtos .item .card.--thumbnail .card-inner {
+    border-radius: 0;
+}
+
+.produtos .item .card.--thumbnail .card-inner .thumbnail {
+    height: 290px;
+    margin: -41px -40px 0;
+}
+
+/* @media screen and (max-width: 1600px) { */
+    .section[data-section=unidades] .container::after {
+        height: 565px;
+        width: 1600px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc(50% - 800px);
+        z-index: 1;
+        background: url(./img/curved-pattern.png) center -15px / 130% auto no-repeat var(--yellow);
+    }
+/* } */
+
+.section[data-section=unidades]  .card {
+    transition: 500ms ease all;
+}
+
+.section[data-section=unidades]  .card:hover {
+    transform: scale(1.05);
+}
+
+.section[data-section=unidades]  .card.--thumbnail .card-inner .thumbnail {
+    height: 180px;
+}
+
+.section[data-section=unidades]  .card.--thumbnail .card-inner .img-fluid {
+    max-width: 700px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.section[data-section=unidades] .produtos .item .card.--thumbnail .card-inner .title {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.section[data-section=obrigado] {
+    margin-top: 0;
+}
+
+.page-header .breadcrumbs::before, .page-header .breadcrumbs::after,
+.page-header .title::before, .page-header .title::after {
+    display: none;
+}
+
+.page-header {
+    background: url(./img/page-header.png) center center / cover no-repeat var(--blue);
+}
+
+.page-header .breadcrumbs li {
+    color: white;
+}
+
+.page-header .breadcrumbs,
+.page-header .title {
+    order: initial;
+    min-width: auto;
+    text-align: initial;
+    background-color: initial;
+}
+
+.banner *,
+.banner .text {
+    color: white;
+}
+
+.banner .container .text::after {
+    display: none;
+}
+
+.banner .text p {
+    display: flex;
+    line-height: initial;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.banner .text p img {
+    width: 71px;
+    margin-right: 42px;
+}
+
+.addresses a {
+    color: inherit;
+}
+
+.card-inner .text, .card-inner .text * {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: inherit;
+}
+
+/* @media screen and (min-width: 1601px) {
+    .section[data-section=unidades] {
+        background: var(--blue);
+    }
+    .section[data-section=unidades] .container {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    .section[data-section=unidades] .section-header {
+        color: var(--yellow);
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    .section[data-section=floripa-pneus] .section-header {
+        text-align: center !important;
+    }
+    /* .section[data-section=sobre] + * .container {
+        padding-top: 0 !important;
+    } */
+    .produtos .item {
+        margin-bottom: 0;
+    }
+    .produtos .item:not(:last-of-type) {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        background-color: var(--yellow);
+    }
+    .header .container .nav-link:not(.btn) {
+        color: black;
+    }    
+    .header .container .nav-link:not(.btn):hover {
+        color: white;
+    }
+    .footer .container .text.copyright {
+        text-align: initial;
+    }    
+}
+
+.nav.--mobile {
+    background-color: black;
+    overflow: hidden;
+    max-height: 0;
+    transition: 500ms ease max-height;
+}
+
+.nav.--mobile.is-active {
+    max-height: 500px;
+}
+
+.nav.--mobile ul a {
+    padding: 1.5rem;
+}
+
+.nav.--mobile ul > *:not(:last-child) {
+    border-bottom: 1px rgba(255, 255, 255, .1) solid;
+}
+
+.nav.--mobile ul > *,
+.nav.--mobile ul > * a {
+	display: block
+}
+
+.nav.--mobile ul > * a {
+    color: white;
+}
+
+
+p.privacidade a:hover {
+	text-decoration: underline;
+}
+
+p.privacidade, p.privacidade * {
+    line-height: 1.2;
+    color: inherit;
+}
+
+p.privacidade * {
+    font-weight: bold;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #46b450;
+    border: 0;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.header .container .nav-item:not(:last-of-type) {
+    padding-right: 1rem;
+}
+
+.header .container .nav-link:not(.btn) {
+    color: black;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 568px) {
+    .header .container .logo {
+        max-width: 105px;
+    }
+}
+
+.copyright.d-lg-none {
+	order: 3
+}
+
+.nav-footer {
+	border-top: 1px rgba(255, 255, 255, .1) solid
+}
+
+.header button {
+	filter: initial
+}
+
+.nav.--mobile .social-networks ul a {
+    padding: 0 0.5rem;
+    position: relative;
+    top: 3px;
+}
+
+.nav.--mobile .social-networks ul > *:not(:last-child) {
+	border-bottom: initial
+}
+
+.banner{color: white}
+
+.banner .text p img {
+    flex: 0 0 auto;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.banner .text p {
+    display: flex;
+    color: white;
+    align-items: center;
+    line-height: 1.4;
+}
